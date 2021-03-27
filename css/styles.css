@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.principal {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+.imagen {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.principal__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.principal__header .principal__lista {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+
+  /* transform: translateX(63px); */
+}
+.principal__header .principal__lista li {
+  list-style: none;
+  border: 2px solid #ff8000;
+  margin: 0 5px;
+  border-radius: 17px;
+}
+
+.principal__header .principal__lista li:hover {
+  background-color: #ff8000;
+  transition: 0.4s;
+  transform: translateY(-2px);
+}
+
+.principal__header .principal__lista li a {
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+  margin-left: 20px;
+  text-decoration: none;
+  margin: 3px 15px;
+}
+.menu {
+  font-weight: 900;
+  display: none;
+}
+.content {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textbox {
+  position: relative;
+  top: -70px;
+  max-width: 600px;
+}
+
+.content .textbox h2 {
+  font-size: 2.5em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.content .textbox h2 span {
+  color: #ff8000;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.content .textbox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #ff8000;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .imgbox {
+  width: 420px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+  margin-top: 50px;
+}
+
+.content .imgbox img {
+  max-width: 550px;
+  height: 250px;
+}
+
+.tres ul li {
+  list-style: none;
+}
+
+.tres {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.foto {
+  height: 70px;
+  max-width: 60px;
+}
+
+.tres li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tres li :hover {
+  transform: translateY(-20px);
+}
+
+.sci li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.sci {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  margin: 5px 0;
+  /* transform: scale(0, 5); */
+  filter: invert(1);
+}
+.sci li a i {
+  font-size: 35px;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff8000;
+  clip-path: circle(650px at right 800px);
+}
+/* seccion 2 */
+
+.seccion2 {
+  min-height: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  background-color: black;
+}
+
+section > h3 {
+  font-size: 45px;
+  text-align: center;
+  animation: backInUp;
+  animation-duration: 2s;
+}
+
+.parrafo {
+  text-align: center;
+  animation: backInUp;
+  animation-duration: 2s;
+}
+
+h3 > span {
+  color: #ff8000;
+}
+/* <!-------------------------------------  seccion de los precios  -----------------------------------> */
+.precio {
+  width: 100%;
+  /* height: 80vh; */
+  background: black;
+}
+.precio__titulo h3 {
+  height: 20%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+}
+.precio__seccion {
+  height: 80%;
+  /* background-image: url("imagenes/mo.png"); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.precio__seccion__container {
+  width: 90%;
+  max-width: 1100px;
+  height: 90%;
+  text-align: center;
+
+  display: flex;
+}
+.fusion {
+  width: 32%;
+  height: 100%;
+  background: #ff8000;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.fusion img {
+  width: 400px;
+  height: 250px;
+}
+.fusion h3 {
+  font-size: 37px;
+  text-align: center;
+}
+.fusion p {
+  font-size: 33px;
+  font-weight: 700;
+}
+.fusion .sp {
+  font-size: 20px;
+  font-weight: 500;
+}
+.precio__liviano {
+  width: 34%;
+  height: 100%;
+  background: #ff8000;
+  margin-right: 10px;
+}
+.precio__liviano img {
+  width: 350px;
+}
+.precio__motocarro {
+  width: 32%;
+  height: 100%;
+  background: #ff8000;
+}
+.precio__motocarro img {
+  width: 350px;
+}
+/* otros servicios */
+
+.otros-servicios {
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  padding: 40px 50px;
+  background-color: black;
+}
+
+.otros-servicios__titulo {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.otros-servicios__servicios {
+  display: grid;
+  min-width: 80%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+}
+
+.servicios__bloque {
+  max-width: 95%;
+}
+
+.servicios__image {
+  width: 100%;
+}
+
+.servicios__titulo1 {
+  margin: 5px 0;
+  font-size: 21px;
+  color: #ff8000;
+}
+
+.servicios__parrafo {
+  margin-bottom: 25px;
+}
+/**************************** Mapa *****************************/
+.mapa {
+  width: 100%;
+  height: 700px;
+  background-color: black;
+}
+.mapa_img {
+  width: 100%;
+  height: 85%;
+}
+.mapa__ubicacion {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+/******************************************* normatividad *******************************************/
+.normatividad {
+  width: 100%;
+
+  height: 500px;
+  background: black;
+}
+.normatividad__texto {
+  height: 20%;
+}
+.texto__titulo {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.texto__parrafo {
+  text-align: center;
+  font-size: 18px;
+}
+.normatividad__secciones {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.combinacion {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom right, black, #ff8000);
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.combinacion__imagen {
+  width: 117px;
+  height: 117px;
+  text-align: center;
+}
+.combinacion__texto {
+  font-size: 25px;
+}
+.norma__texto {
+  font-size: 20px;
+}
+/******************************************* imagenes de organizaciones aliados ****************************/
+
+.relacion {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 100px;
+  background: black;
+}
+.relacion__imagen {
+  width: 153px;
+  height: 79px;
+  padding-bottom: 10px;
+}
+
+.runt {
+  width: 153px;
+  height: 79px;
+  border: 2px solid #fff;
+  padding: 0 5px 10px 5px;
+}
+/******************************************** footer *************************************************/
+
+.footer {
+  width: 100%;
+  height: 20vh;
+  /* background-image: linear-gradient(to bottom right, black, #ff8000); */
+  background: black;
+}
+
+.footer__texto {
+  transform: translateY(22px);
+  padding-left: 25px;
+  font-size: 21px;
+}
+
+.footer__relleno {
+  color: #ff8000;
+}
+/**************************** responsive *****************************/
+
+@media screen and (max-width: 1108px) {
+  .principal__header {
+    flex-direction: column;
+  }
+  .principal__header .principal__lista {
+    justify-content: center;
+    width: 100%;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content .textbox {
+    top: -20px;
+  }
+  .circle {
+    clip-path: circle(53% at 50% 110%);
+  }
+  .content .textbox h2 {
+    font-size: 40px;
+  }
+  .precio__motocicleta img {
+    width: 300px;
+    height: 200px;
+  }
+  .fusion h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .fusion p {
+    font-size: 25px;
+  }
+  .fusion .sp {
+    font-size: 20px;
+  }
+  .precio__liviano img {
+    width: 300px;
+    height: 200px;
+  }
+  .precio__motocarro img {
+    width: 250px;
+    height: 200px;
+  }
+  .combinacion {
+    width: 200px;
+    height: 200px;
+  }
+  .combinacion__imagen {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+  .combinacion__texto {
+    font-size: 20px;
+  }
+  .norma__texto {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 909px) {
+  .principal__header {
+    flex-direction: row;
+    /* position: relative; */
+  }
+  .principal__header .principal__lista {
+    display: none;
+  }
+  .principal__header .esconder {
+    /* transform: translateY(-230px); */
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    width: 250px;
+    height: 220px;
+    right: 10px;
+    padding-top: 27px;
+    background: rgb(255, 128, 0);
+    z-index: 100;
+  }
+  .principal__header .principal__lista li {
+    border: transparent;
+    top: 10px;
+  }
+  .principal {
+    padding: 27px;
+  }
+  .imagen {
+    width: 120px;
+    height: 120px;
+  }
+  .menu {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 200;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  .content {
+    top: 150px;
+  }
+  .content .textbox h2 {
+    font-size: 30px;
+  }
+  .content .imgbox img {
+    max-width: 450px;
+    height: 200px;
+  }
+  .content .imgbox {
+    padding-right: 65px;
+    margin-top: 150px;
+  }
+  section > h3 {
+    font-size: 23px;
+  }
+  .combinacion {
+    width: 150px;
+    height: 150px;
+  }
+  .combinacion__imagen {
+    width: 50px;
+    height: 50px;
+  }
+  .combinacion__texto {
+    font-size: 18px;
+  }
+  .norma__texto {
+    font-size: 17px;
+    text-align: center;
+  }
+  .texto__parrafo {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 826px) {
+  .precio__seccion__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fusion {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .otros-servicios__servicios {
+    display: block;
+  }
+  /* .normatividad {
+    height: 1000px;
+  } */
+  /* .normatividad__secciones {
+    flex-direction: column;
+  } */
+  .texto__titulo {
+    font-size: 30px;
+  }
+  /* .normatividad__secciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  } */
+  /* .relacion {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px 20px; */
+  /* justify-content: space-between; */
+  /* grid-auto-columns: 1fr; */
+}
+
+@media screen and (max-width: 480px) {
+  .principal {
+    padding: 27px;
+  }
+  .content {
+    top: 120px;
+  }
+  .content .textbox h2 {
+    font-size: 23px;
+  }
+  .sci {
+    display: none;
+  }
+  .content .imgbox img {
+    max-width: 350px;
+    height: 172px;
+  }
+  .precio__titulo h3 {
+    font-size: 30px;
+  }
+  .otros-servicios__titulo {
+    font-size: 30px;
+  }
+
+  .precio__seccion__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fusion {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .mapa__ubicacion {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .otros-servicios {
+    padding: 40px 0px 40px 20px;
+  }
+  .mapa {
+    height: 500px;
+  }
+  .normatividad {
+    height: 1000px;
+  }
+  .normatividad__secciones {
+    flex-direction: column;
+  }
+  .texto__titulo {
+    font-size: 30px;
+  }
+  .relacion {
+    /* justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    justify-content: space-between; */
+    /* grid-auto-columns: 1fr; */
+  }
+  .quinta {
+    justify-self: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .relacion {
+    display: block;
+  }
+}
