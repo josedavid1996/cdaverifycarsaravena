@@ -108,7 +108,8 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 25px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  height: 392px;
 }
 
 .content .imgbox img {
@@ -696,7 +697,7 @@ h3 > span {
 
 .proceso {
   background-color: black;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -725,14 +726,14 @@ h3 > span {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   height: 345px;
 }
 
 .mot {
   display: flex;
   justify-content: center;
-  margin: 55px auto 0 auto;
+  margin: 1px auto 0 auto;
 }
 /* <!---------------------------------------- proceso de revision de livianos ----------------------------> */
 
@@ -876,7 +877,7 @@ h3 > span {
     height: 170px;
   }
   .mot {
-    margin: 79px auto 0 auto;
+    /* margin: 79px auto 0 auto; */
   }
 }
 @media screen and (max-width: 909px) {
@@ -931,7 +932,7 @@ h3 > span {
   }
   .content .imgbox {
     padding-right: 65px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
   section > h3 {
     font-size: 23px;
@@ -1015,7 +1016,7 @@ h3 > span {
     height: 150px;
   }
   .mot {
-    margin: 109px auto 0 auto;
+    /* margin: 109px auto 0 auto; */
   }
 
   /* .normatividad__secciones {
