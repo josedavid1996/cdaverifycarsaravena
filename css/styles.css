@@ -20,6 +20,8 @@
   width: 200px;
   height: 200px;
   position: relative;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 .principal__header {
   position: absolute;
@@ -37,6 +39,8 @@
   display: flex;
   justify-content: flex-end;
   width: 90%;
+  animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 
   /* transform: translateX(63px); */
 }
@@ -45,6 +49,7 @@
   border: 2px solid #ff8000;
   margin: 0 5px;
   border-radius: 17px;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .principal__header .principal__lista li:hover {
@@ -78,6 +83,8 @@
   position: relative;
   top: -70px;
   max-width: 600px;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .content .textbox h2 {
@@ -101,6 +108,11 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+.content .textbox a:hover {
+  transition: 0.4s;
+  transform: translateY(-2px);
 }
 
 .content .imgbox {
@@ -110,6 +122,8 @@
   padding-right: 25px;
   /* margin-top: 50px; */
   height: 392px;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .content .imgbox img {
@@ -127,6 +141,8 @@
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
+  animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
 }
 
 .foto {
@@ -152,9 +168,9 @@
 }
 
 .sci {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  right: 50px;
+  right: 50px; */
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
@@ -164,6 +180,8 @@
 
 .sci li {
   list-style: none;
+  animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .sci li a {
@@ -198,14 +216,14 @@
 section > h3 {
   font-size: 45px;
   text-align: center;
-  animation: backInUp;
-  animation-duration: 2s;
+  /* animation: backInLeft;
+  animation-duration: 2s; */
 }
 
 .parrafo {
   text-align: center;
-  animation: backInUp;
-  animation-duration: 2s;
+  /* animation: backInLeft;
+  animation-duration: 2s; */
 }
 
 h3 > span {
@@ -235,7 +253,6 @@ h3 > span {
   max-width: 1100px;
   height: 90%;
   text-align: center;
-
   display: flex;
 }
 .fusion {
@@ -248,6 +265,8 @@ h3 > span {
   align-items: center;
   justify-content: center;
   height: 100%;
+  animation: swing;
+  animation-duration: 4s;
 }
 .fusion img {
   width: 400px;
@@ -297,6 +316,8 @@ h3 > span {
   font-size: 45px;
   margin-bottom: 20px;
   font-weight: 600;
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .otros-servicios__servicios {
@@ -309,10 +330,13 @@ h3 > span {
 
 .servicios__bloque {
   max-width: 95%;
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .servicios__image {
   width: 100%;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .servicios__titulo1 {
@@ -376,6 +400,9 @@ h3 > span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 6s; /* don't forget to set a duration! */
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 .combinacion__imagen {
   width: 117px;
@@ -456,6 +483,8 @@ h3 > span {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 4s; /* don't forget to set a duration! */
 }
 .collage__fondo {
   width: 90%;
@@ -469,6 +498,7 @@ h3 > span {
   align-items: center;
   grid-gap: 10px;
   position: relative;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 .collage__fondo img {
   width: 100%;
@@ -573,6 +603,9 @@ h3 > span {
   height: 200px;
   border-radius: 50%;
   border: 3px solid #ff8000;
+  animation: rotateInDownLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 .ser__titulo {
   font-size: 20px;
@@ -617,6 +650,8 @@ h3 > span {
   /* transform: translateX(0); */
   color: #ff8000;
   font-size: 40px;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .conjunto__fondo {
@@ -637,6 +672,7 @@ h3 > span {
   border: 2px solid #fff;
   border-radius: 10px;
   margin: 0 20px;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .conjunto__imagen {
@@ -663,6 +699,9 @@ h3 > span {
   align-items: center;
   background-image: linear-gradient(to bottom right, black, #ff8000);
   border: 2px solid #fff;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 .normatividad__imagen {
   width: 117px;
@@ -706,6 +745,9 @@ h3 > span {
 .proceso__livianos,
 .proceso__motos {
   width: 50%;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .proceso__titulo {
@@ -717,7 +759,7 @@ h3 > span {
 .proceso__imagen {
   width: 250px;
   height: 250px;
-  clip-path: circle(50% at 50% 50%);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
   border: 5px solid #fff;
   border-radius: 50%;
 }
@@ -751,6 +793,8 @@ h3 > span {
   padding-top: 38px;
   margin: 0 auto;
   /* height: 100vh; */
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
 
 .descripcion__titulos {
@@ -764,10 +808,11 @@ h3 > span {
 .descripcion__imagen {
   width: 200px;
   height: 200px;
-  clip-path: circle(50% at 50% 50%);
+
   border: 2px solid #fff;
   border-radius: 50%;
   align-self: center;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .descripcion__grupo {
@@ -789,6 +834,107 @@ h3 > span {
 
 .entrega {
   padding-bottom: 25px;
+}
+/*************************** seccion del contacto *********************/
+
+.body1 {
+  background: #181818;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0 1.5em;
+  height: 100vh;
+}
+
+.container__contacto {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #ff8000;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #222222;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #ff8000;
+}
+
+.contact-form form button {
+  background: #ff8000;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #ff8000;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+
+.contact-info {
+  background: #000;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
 /**************************** responsive *****************************/
@@ -1032,6 +1178,24 @@ h3 > span {
   /* justify-content: space-between; */
   /* grid-auto-columns: 1fr; */
 }
+@media (min-width: 700px) {
+  /* body {
+        padding: 0 4em;
+    } */
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .informacion {
     display: flex;
