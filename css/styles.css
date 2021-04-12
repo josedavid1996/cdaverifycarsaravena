@@ -168,9 +168,9 @@
 }
 
 .sci {
-  /* position: absolute;
+  position: absolute;
   top: 50%;
-  right: 50px; */
+  right: 50px;
   transform: translateY(-50%);
   display: flex;
   justify-content: center;
@@ -1049,7 +1049,9 @@ ul {
   .principal__header .principal__lista li {
     border: transparent;
     top: 10px;
+    box-shadow: none;
   }
+
   .principal {
     padding: 27px;
   }
@@ -1241,6 +1243,16 @@ ul {
   .content .textbox h2 {
     font-size: 23px;
   }
+
+  .principal__header .principal__lista {
+    animation: backInRight;
+    animation-duration: 1s;
+  }
+  .principal__header {
+    background: black;
+    padding-bottom: 0;
+  }
+
   .sci {
     display: none;
   }
