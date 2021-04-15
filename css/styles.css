@@ -415,6 +415,42 @@ h3 > span {
 .norma__texto {
   font-size: 20px;
 }
+
+/************************************************ onac ***************************************/
+.onac {
+  background-color: black;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.onac__imagen {
+  height: 200px;
+  width: 250px;
+}
+.onac__texto {
+  width: 500px;
+  padding: 20px 0;
+  font-size: 18px;
+}
+.onac__boton {
+  background-color: black;
+  color: #ff8000;
+  height: 40px;
+  width: 190px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 5px;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+.onac__boton:hover {
+  background-color: #ff8000;
+  color: #000;
+}
 /******************************************* imagenes de organizaciones aliados ****************************/
 
 .relacion {
@@ -1232,6 +1268,10 @@ ul {
   .descripcion__imagen {
     display: none;
   }
+  .onac__texto {
+    width: 450px;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .principal {
@@ -1293,6 +1333,10 @@ ul {
   }
   .texto__titulo {
     font-size: 30px;
+  }
+  .onac__texto {
+    font-size: 14px;
+    width: 250px;
   }
   .relacion {
     /* justify-content: space-evenly;
